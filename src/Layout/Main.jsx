@@ -25,7 +25,7 @@ export default class Main extends Component {
     return (
       <div className="container content my-4">
 
-       <Search searchMovie = {this.searchMovies} />
+       <Search searchMovies = {this.searchMovies} />
 
         {this.state.movies.length ? (
           <AllMovies movies={this.state.movies} />
