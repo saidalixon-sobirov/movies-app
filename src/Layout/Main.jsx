@@ -9,13 +9,13 @@ export default class Main extends Component {
   };
 
   componentDidMount() {
-    fetch("http://www.omdbapi.com/?apikey=9dfc7ef&s=panda")
+    fetch("http://www.omdbapi.com/?apikey=afbcc655&s=panda")
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search }));
   }
 
   searchMovies = (str)=>{
-    fetch(`http://www.omdbapi.com/?apikey=9dfc7ef&s=${str}`)
+    fetch(`http://www.omdbapi.com/?apikey=afbcc655&s=${str}`)
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search }));
   };
