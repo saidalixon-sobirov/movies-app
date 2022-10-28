@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.content {
+  height: calc(100vh - 58px - 58px);
+}
+
+.mask {
+  background-color: rgba(251, 251, 251, 0.15);
+}
