@@ -21,6 +21,7 @@ export default class Search extends React.Component {
           onChange={(e) => this.setState({ search: e.target.value })}
           onKeyDown={this.handleKey}
         />
+        <button type="button" className="btn btn-primary" onClick={()=>this.props.searchMovies(this.state.search)}>Search</button>
       </div>
     );
   }

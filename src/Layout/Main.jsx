@@ -8,14 +8,16 @@ export default class Main extends Component {
     movies: [],
   };
 
+  // afbcc655
+
   componentDidMount() {
-    fetch("http://www.omdbapi.com/?apikey=afbcc655&s=panda")
+    fetch("http://www.omdbapi.com/?apikey=329ffa13&s=iron")
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search }));
   }
 
   searchMovies = (str)=>{
-    fetch(`http://www.omdbapi.com/?apikey=afbcc655&s=${str}`)
+    fetch(`http://www.omdbapi.com/?apikey=329ffa13&s=${str}`)
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search }));
   };
