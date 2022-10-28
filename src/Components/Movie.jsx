@@ -2,7 +2,7 @@ export default function Movie(props) {
   const { Title, Year, imdbID, Type, Poster } = props;
 
   return (
-    <div key={imdbID} className="card movie">
+    <div key={imdbID} className="card movie m-2">
       <div
         className="bg-image hover-overlay ripple"
         data-mdb-ripple-color="light"

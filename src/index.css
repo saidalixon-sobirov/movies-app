@@ -14,8 +14,17 @@ code {
 
 
 .content {
-  height: calc(100vh - 58px - 58px);
+  min-height: calc(100vh - 58px - 58px);
 }
+
+.movies {
+  
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+gap: 1;
+}
+
+
 
 .mask {
   background-color: rgba(251, 251, 251, 0.15);
